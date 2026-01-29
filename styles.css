@@ -1,0 +1,42 @@
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Transitions */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Modal States */
+#quick-view-modal.hidden {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#quick-view-modal:not(.hidden) {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Custom Scrollbar for aesthetic */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #fdf2f8; 
+}
+::-webkit-scrollbar-thumb {
+    background: #fbcfe8; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #f472b6; 
+}
