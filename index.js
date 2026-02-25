@@ -3,12 +3,12 @@ const firebaseConfig = {
     apiKey: "AIzaSyBPs-cn62v2r0qoG_uqfE8QGcuOJNJEIYY",
     authDomain: "erantiana.firebaseapp.com",
     projectId: "erantiana",
-    storageBucket: "erantiana.appspot.com",
+    storageBucket: "eratiana.appspot.com",
     messagingSenderId: "35925770958",
     appId: "1:35925770958:web:9afdb65e2bf292f801469f",
     measurementId: "G-HYR8F6RFS9"
 };
-  
+
 // Initialize Firebase
 if (typeof firebase !== 'undefined') {
     firebase.initializeApp(firebaseConfig);
@@ -20,7 +20,7 @@ if (typeof firebase !== 'undefined') {
 // --- APP CONFIGURATION ---
 const CONFIG = {
     CURRENCY: 'LKR',
-    ADMIN_KEY: '1234', 
+    ADMIN_KEY: '1234',
     WHATSAPP_NUMBER: '94781026261'
 };
 
@@ -35,11 +35,11 @@ const state = {
 
 // --- DATA ---
 const products = [
-    { 
-        id: 1, 
-        name: '🎀 Sparkle Stationery & Fun Box', 
-        price: 5500.00, 
-        image: '1.jpg',
+    {
+        id: 1,
+        name: '🎀 Sparkle Stationery & Fun Box',
+        price: 5500.00,
+        image: '1.JPG',
         description: 'Make gifting extra special with our thoughtfully curated Kids Premium Gift Box for Girls. Packed with colourful stationery, creative activity items, and a playful pop-it crossbody bag, this box is designed to inspire imagination and joyful learning.',
         ageRange: 'no age limit',
         items: [
@@ -56,88 +56,88 @@ const products = [
         ],
         category: 'premium Collection'
     },
-    
-     { 
-         id: 2, 
-         name: 'Stich happy box ', 
-         price: 5650.00, 
-         image: '2.jpg',
-         description: 'Bring joy to any Stitch lover with our specially curated Stitch Gift Box. Packed with adorable plushies, fun stationery, and practical accessories, this gift set is perfect for birthdays, surprises, or themed celebrations. Beautifully packaged in a premium gift box, it’s designed to make gifting effortless and memorable.',
-         ageRange: 'no age limit', // Optional
-         items: [
-             ' Stitch Plushie - Soft, adorable, and perfect for cuddles',
-             'Stitch Keychain - Cute accessory for bags or keys',
-             'Stitch Notebook - Perfect for jotting down notes or sketches',
-             'Stitch Pen Set - Fun and functional stationery',
-             'Stitch 2-in-1 Eraser & Sharpener  Practical and compact design',
+
+    {
+        id: 2,
+        name: 'Stich happy box ',
+        price: 5650.00,
+        image: '2.JPG',
+        description: 'Bring joy to any Stitch lover with our specially curated Stitch Gift Box. Packed with adorable plushies, fun stationery, and practical accessories, this gift set is perfect for birthdays, surprises, or themed celebrations. Beautifully packaged in a premium gift box, it’s designed to make gifting effortless and memorable.',
+        ageRange: 'no age limit', // Optional
+        items: [
+            ' Stitch Plushie - Soft, adorable, and perfect for cuddles',
+            'Stitch Keychain - Cute accessory for bags or keys',
+            'Stitch Notebook - Perfect for jotting down notes or sketches',
+            'Stitch Pen Set - Fun and functional stationery',
+            'Stitch 2-in-1 Eraser & Sharpener  Practical and compact design',
 
         ],
-         category: 'Premium Collection'
-     },
+        category: 'Premium Collection'
+    },
 
-     { 
-         id: 3, 
-         name: 'Twinkle Pink Box', 
-         price: 3300.00, 
-         image: '3.jpg',
-         description: 'Twinkle Pink Box - The Perfect Gift for Little Sparkles! Make every moment magical with our Twinkle Pink Box, thoughtfully packed with adorable and practical essentials. This charming set includes a pink-themed tiffin box, breakfast box, straw cup, unicorn oil pastel pack, and a fun fish-shaped notebook — all beautifully arranged in a premium gift box.',
-         ageRange: 'Perfect for ages 3-8', // Optional
-         items: [
-             'A Tiffin box (pink theme)',
-                'Breakfast box (pink theme)',
-                'Straw cup (pink theme)',
-                'Unicorn oil pastel pack',
-                'Fish-shaped notebook',
-                'with gift box packaging'
-             
+    {
+        id: 3,
+        name: 'Twinkle Pink Box',
+        price: 3300.00,
+        image: '3.JPG',
+        description: 'Twinkle Pink Box - The Perfect Gift for Little Sparkles! Make every moment magical with our Twinkle Pink Box, thoughtfully packed with adorable and practical essentials. This charming set includes a pink-themed tiffin box, breakfast box, straw cup, unicorn oil pastel pack, and a fun fish-shaped notebook — all beautifully arranged in a premium gift box.',
+        ageRange: 'Perfect for ages 3-8', // Optional
+        items: [
+            'A Tiffin box (pink theme)',
+            'Breakfast box (pink theme)',
+            'Straw cup (pink theme)',
+            'Unicorn oil pastel pack',
+            'Fish-shaped notebook',
+            'with gift box packaging'
+
         ],
-         category: 'Kids Collection'
-     },
+        category: 'Kids Collection'
+    },
 
-    { 
-         id: 4, 
-         name: 'Adventure fun box', 
-         price: 6750.00, 
-         image: '4.jpg',
-         description: 'Surprise your little one with the Adventure Fun Box, a delightful gift set designed to spark imagination, creativity, and endless play. Thoughtfully curated with colorful, exciting, and kid-friendly essentials, this box brings joy from the moment it’s opened. Perfect for birthdays, celebrations, or simply making a child day extra special, it’s a gift that blends learning with fun in the sweetest way.',
-         ageRange: 'Perfect for ages 3-8', // Optional
-         items: [
-             'A 12-color pencil pack',
-                'A stationery kit (includes pencils, eraser, sharpener, ruler, notebook)',
-                'A truck-shaped tiffin box',
-                'A 3D notebook (meow)',
-                'A rotating puzzle pack',
-                'A Spiderman sharpener',
-                'A Pokémon toy pack',
-                'A straw cup',
-                'A do-nut notebook',
-                'With gift box'
-             
+    {
+        id: 4,
+        name: 'Adventure fun box',
+        price: 6750.00,
+        image: '4.JPG',
+        description: 'Surprise your little one with the Adventure Fun Box, a delightful gift set designed to spark imagination, creativity, and endless play. Thoughtfully curated with colorful, exciting, and kid-friendly essentials, this box brings joy from the moment it’s opened. Perfect for birthdays, celebrations, or simply making a child day extra special, it’s a gift that blends learning with fun in the sweetest way.',
+        ageRange: 'Perfect for ages 3-8', // Optional
+        items: [
+            'A 12-color pencil pack',
+            'A stationery kit (includes pencils, eraser, sharpener, ruler, notebook)',
+            'A truck-shaped tiffin box',
+            'A 3D notebook (meow)',
+            'A rotating puzzle pack',
+            'A Spiderman sharpener',
+            'A Pokémon toy pack',
+            'A straw cup',
+            'A do-nut notebook',
+            'With gift box'
+
         ],
-         category: 'Kids Collection'
-     },
+        category: 'Kids Collection'
+    },
 
-     { 
-         id: 5, 
-         name: 'Blue bliss box', 
-         price: 4800.00, 
-         image: '5.jpg',
-         description: 'A pastel-blue delight filled with adorable, useful, and girly must-haves—perfect for gifting on any special occasion.',
-         ageRange: 'Perfect for ages 3-8', // Optional
-         items: [
-             'A blue drink-up bottle',
-                'A soft, fluffy face towel',
-                'A stylish hair clip',
-                'A cute keychain',
-                'A matching scrunchie',
-                'A charming bracelet',
-                'A “Meow” 3D notebook',
-             
+    {
+        id: 5,
+        name: 'Blue bliss box',
+        price: 4800.00,
+        image: '5.JPG',
+        description: 'A pastel-blue delight filled with adorable, useful, and girly must-haves—perfect for gifting on any special occasion.',
+        ageRange: 'Perfect for ages 3-8', // Optional
+        items: [
+            'A blue drink-up bottle',
+            'A soft, fluffy face towel',
+            'A stylish hair clip',
+            'A cute keychain',
+            'A matching scrunchie',
+            'A charming bracelet',
+            'A “Meow” 3D notebook',
+
         ],
-         category: 'Kids Collection'
-     },
+        category: 'Kids Collection'
+    },
 
-    
+
     // ADD MORE PRODUCTS HERE - Template:
     // { 
     //     id: 2, 
@@ -180,17 +180,32 @@ const app = {
     navigate: async (page) => {
         state.currentPage = page;
         window.scrollTo(0, 0);
-        
+        app.closeMobileMenu();
+
         if (page === 'admin' && state.isAdmin) {
-             await app.fetchOrders();
+            await app.fetchOrders();
         }
-        
+
         app.render();
+    },
+
+    toggleMobileMenu: () => {
+        const menu = document.getElementById('mobile-menu');
+        if (menu) {
+            menu.classList.toggle('hidden');
+        }
+    },
+
+    closeMobileMenu: () => {
+        const menu = document.getElementById('mobile-menu');
+        if (menu && !menu.classList.contains('hidden')) {
+            menu.classList.add('hidden');
+        }
     },
 
     toggleAdmin: () => {
         if (state.isAdmin) {
-            state.isAdmin = pass;
+            state.isAdmin = false;
             app.navigate('store');
         } else {
             const pass = prompt("Enter Admin Code:");
@@ -210,10 +225,10 @@ const app = {
 
         try {
             const snapshot = await db.collection('orders')
-                                     .orderBy('createdAt', 'desc')
-                                     .limit(20)
-                                     .get();
-            
+                .orderBy('createdAt', 'desc')
+                .limit(20)
+                .get();
+
             state.orders = snapshot.docs.map(doc => ({
                 id: doc.id,
                 ...doc.data()
@@ -240,7 +255,7 @@ const app = {
 
     removeFromCart: (id) => {
         state.cart = state.cart.filter(i => i.id !== id);
-        app.render(); 
+        app.render();
         app.updateCartUI();
     },
 
@@ -273,6 +288,8 @@ const app = {
 
     placeOrder: async (formElement) => {
         const btn = document.getElementById('pay-btn');
+        const formContainer = formElement.parentElement;
+
         btn.textContent = 'Processing...';
         btn.disabled = true;
 
@@ -281,11 +298,11 @@ const app = {
         const email = formData.get('email');
         const address = formData.get('address');
         const totalPrice = state.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-        
+
         const itemsListString = state.cart.map(i => `- ${i.name} (x${i.quantity})`).join('\n');
 
-        const whatsappMessage = 
-`*New Order Request!* 🎁
+        const whatsappMessage =
+            `*New Order Request!* 🎁
 ------------------
 *Customer:* ${customerName}
 *Address:* ${address}
@@ -312,15 +329,40 @@ Please confirm my order and payment details.`;
             if (db) await db.collection('orders').add(orderData);
 
             const whatsappUrl = `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
-            window.open(whatsappUrl, '_blank');
 
-            app.clearCart();
-            app.navigate('store');
+            // Replaced auto-redirect with manual button for mobile reliability
+            formContainer.innerHTML = `
+                <div class="text-center py-8">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="check" class="w-8 h-8 text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif text-gray-800 mb-2">Order Saved!</h3>
+                    <p class="text-gray-600 mb-6">Click below to send your order details via WhatsApp to complete the purchase.</p>
+                    
+                    <a href="${whatsappUrl}" target="_blank" 
+                       onclick="app.finishOrder()"
+                       class="inline-flex items-center justify-center w-full py-4 bg-[#25D366] text-white font-bold rounded-lg hover:bg-[#128C7E] transition shadow-lg text-lg">
+                        <i data-lucide="message-circle" class="mr-2"></i>
+                        Open WhatsApp
+                    </a>
+                </div>
+            `;
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+
         } catch (error) {
             console.error("Error:", error);
             alert('Error processing order. Please try again.');
             btn.disabled = false;
+            btn.textContent = 'Place Order via WhatsApp 💬';
         }
+    },
+
+    finishOrder: () => {
+        // Delay clearing cart slightly so they don't see it empty if they come back immediately
+        setTimeout(() => {
+            app.clearCart();
+            app.navigate('store');
+        }, 1000);
     },
 
     byob: {
@@ -333,14 +375,14 @@ Please confirm my order and payment details.`;
         updateItem: (itemId, change) => {
             const currentCount = state.byob.items[itemId] || 0;
             const totalItems = Object.values(state.byob.items).reduce((a, b) => a + b, 0);
-            
+
             if (change > 0 && totalItems >= state.byob.selectedBox.maxItems) return;
             if (change < 0 && currentCount === 0) return;
 
             const newCount = currentCount + change;
             if (newCount === 0) delete state.byob.items[itemId];
             else state.byob.items[itemId] = newCount;
-            
+
             app.render();
         },
         finish: () => {
@@ -348,9 +390,9 @@ Please confirm my order and payment details.`;
                 const item = itemOptions.find(i => i.id === id);
                 return sum + (item.price * qty);
             }, 0);
-            
+
             const finalPrice = state.byob.selectedBox.basePrice + totalItemsCost;
-            
+
             app.addToCart({
                 id: `custom-${Date.now()}`,
                 name: `Custom ${state.byob.selectedBox.name}`,
@@ -368,7 +410,7 @@ Please confirm my order and payment details.`;
         if (!product) return;
         const modal = document.getElementById('quick-view-modal');
         const content = document.getElementById('modal-content');
-        
+
         // Build items list HTML if items exist
         const itemsHTML = product.items ? `
             <div class="mb-6">
@@ -389,14 +431,14 @@ Please confirm my order and payment details.`;
                 <p class="text-sm font-medium text-pink-800">👶 ${product.ageRange}</p>
             </div>
         ` : '';
-        
+
         content.innerHTML = `
             <div class="grid md:grid-cols-2 gap-8">
                 <div>
                     <img src="${product.image}" class="w-full h-auto object-cover rounded-lg shadow-lg" 
                          onerror="this.src='https://placehold.co/400x400/f3a8b4/333333?text=${encodeURIComponent(product.name)}'">
                 </div>
-                <div class="overflow-y-auto max-h-[70vh]">
+                <div>
                     <h2 class="text-3xl font-serif mb-3 text-gray-800">${product.name}</h2>
                     <p class="text-3xl font-bold text-pink-600 mb-4">${CONFIG.CURRENCY} ${product.price.toLocaleString()}</p>
                     
@@ -422,12 +464,12 @@ Please confirm my order and payment details.`;
 
     render: () => {
         const container = document.getElementById('main-content');
-        container.innerHTML = ''; 
+        container.innerHTML = '';
 
         if (state.currentPage === 'store') container.innerHTML = app.views.store();
         else if (state.currentPage === 'checkout') container.innerHTML = app.views.checkout();
         else if (state.currentPage === 'admin') container.innerHTML = app.views.admin();
-        
+
         if (typeof lucide !== 'undefined') lucide.createIcons();
     },
 
@@ -498,7 +540,7 @@ Please confirm my order and payment details.`;
             return `
                 <section class="relative h-96 flex items-center justify-center text-white overflow-hidden" style="background-color: #5a3d4d;">
                     <div class="absolute inset-0 w-full h-full flex items-center justify-center opacity-15">
-                        <h1 class="text-[20rem] font-bold text-gray-400 animate-pulse" style="letter-spacing: -0.05em;">Eratiana</h1>
+                        <h1 class="text-[13vw] md:text-[20rem] font-bold text-gray-400 animate-pulse" style="letter-spacing: -0.05em;">Eratiana</h1>
                     </div>
                     <div class="absolute inset-0">
                         <div class="absolute top-10 left-10 w-32 h-32 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
@@ -565,7 +607,7 @@ Please confirm my order and payment details.`;
                         Continue Shopping
                     </button>
                 </div>`;
-            
+
             const total = state.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
             return `
                 <div class="container mx-auto px-4 py-12 max-w-5xl">
@@ -641,7 +683,7 @@ Please confirm my order and payment details.`;
                         <button onclick="app.navigate('store')" class="text-gray-500 hover:text-pink-600 font-medium">← Back to Store</button>
                     </div>
                     
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100" id="admin-content">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 overflow-x-auto" id="admin-content">
                         <table class="w-full text-left">
                             <thead class="bg-gradient-to-r from-pink-100 to-rose-100 text-gray-800 font-semibold uppercase text-xs tracking-wider">
                                 <tr>
